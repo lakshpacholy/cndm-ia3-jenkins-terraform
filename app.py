@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     build_num = os.environ.get('BUILD_NUMBER', 'Local')
     hostname = socket.gethostname()
-    return f"<h1>Jenkins CI/CD Pipeline Success!</h1><p>Candidate: Laksh Pacholy</p><p>Build Number: {build_num}</p><p>Hostname: {hostname}</p>"
+    return f"<h1>Jenkins CI/CD Pipeline Success Automate Update!</h1><p>Candidate: Laksh Pacholy</p><p>Build Number: {build_num}</p><p>Hostname: {hostname}</p>"
 
 @app.route('/health')
 def health():
